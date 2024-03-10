@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body onload="img1()">
+    <script>
+        function img1() {
+            document.getElementById('image').src = './img/hyldemoer.jpeg';
+            setTimeout(img2, 2000);
+        }
+
+        function img2() {
+            document.getElementById('image').src = './img/img_8703_5733815eddf2b32a20c1865a.jpeg';
+            setTimeout(img3, 2000);
+        }
+
+        function img3() {
+            document.getElementById('image').src = './img/OskarKlever_Hyldemoer5.jpg';
+            setTimeout(img1, 2000);
+        }
+    </script>
+
+    <button onclick="img1()">Start</button>
+
+    <img id="image" src="./img/hyldemoer.jpeg" alt="">
+
+</body>
+
+</html>
